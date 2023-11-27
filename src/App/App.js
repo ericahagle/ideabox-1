@@ -1,24 +1,19 @@
-import logo from '../logo.svg';
+import { useState } from 'react';
 import './App.css';
 
 function App() {
+  const dummyIdeas = [
+    { id: 1, title: 'Prank Travis', description: 'Stick googly eyes on all his stuff' },
+    { id: 2, title: 'Make a secret password app', description: 'So you and your rideshare driver can both know neither of you is lying' },
+    { id: 3, title: 'Learn a martial art', description: 'To exact vengeance upon my enemies' }
+  ]
+  const [ideas, setIdeas] = useState(dummyIdeas);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className='App'>
+      <h1>IdeaBox</h1>
+      <p>Hi!</p>
+    </main> 
   );
 }
 
