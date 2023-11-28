@@ -8,7 +8,7 @@ function Ideas({ ideas, deleteIdea }) {
         title={idea.title}
         description={idea.description}
         id={idea.id}
-        key={idea.key}
+        key={idea.id}
         deleteIdea={deleteIdea}
       />
     );
