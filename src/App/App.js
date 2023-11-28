@@ -13,8 +13,8 @@ function App() {
   return (
     <main className='App'>
       <h1>IdeaBox</h1>
-      <p>Hi!</p>
-      <Ideas name='Travis' />
+      { !ideas.length && <h2>No ideas yet -- add some!</h2> }
+      <Ideas ideas={ideas} />
     </main> 
   );
 }
